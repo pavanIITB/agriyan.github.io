@@ -1,0 +1,331 @@
+/* Global Properties */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  #gradient
+{
+   font-size:30px;
+    background: linear-gradient(130deg, #121918, #178f55, #2ea846, #73ab32, #a5ad23, #f5f1e6);
+    background-size: 200% 200%;
+    height: 100vh;
+    
+
+    -webkit-animation: Animation 25s ease infinite;
+    -moz-animation: Animation 25s ease infinite;
+    animation: Animation 25s ease infinite;
+}
+
+@-webkit-keyframes Animation {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@-moz-keyframes Animation {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@keyframes Animation { 
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+
+    #main{
+        font-family: 'Athiti';
+        position: fixed;
+        margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+        left: 0;
+        right: 0;
+        background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+    }
+    
+    .my-title{
+        font-family: "Poppins";
+        font-weight: bolder;
+        font-size: 3.2em;
+        color: #f1f1f1;    
+
+    }
+
+    .my-subtitle{
+        font-family: "Poppins";
+        color: #a5ad23;
+        font-size: 1em;    
+    }
+
+
+/* Main Heading Font */
+  .m-heading {
+    font-family: "Roboto Slab", serif;
+  }
+  
+  /* Navigation */
+  .navigation-link {
+    border: 2px solid transparent;
+  }
+  
+  .navigation-link:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #9b5526;
+    transition: 0.5s ease;
+  }
+  
+  /* Main Container height*/
+  .main-container {
+    height: 100vh;
+  }
+  
+  /* Aligning items in main row */
+  .main_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Changing Name Font sixe */
+  .main_row h1 {
+    font-size: 5rem;
+  }
+  
+  /* Making the main image the size of the screen */
+  .main_row img {
+    width: auto;
+    height: 100vh;
+  }
+  
+  /* About Section */
+  .about {
+    background: #2c2c2c;
+    border-radius: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    border-bottom: 8px solid #f5ba09;
+    min-height: 300pt;
+  }
+  
+  /* Social Media Section */
+  #social-media {
+    background: #313552;
+  }
+  
+  /* Add color to Social Media Links */
+  .media_link {
+    padding: 1rem;
+    max-width: 15rem;
+    margin-left: 1rem;
+    border: 2px solid #f5ba09;
+    border-radius: 0.5rem;
+  }
+  /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+  
+  /* Style the social media icons with color, if you want */
+  .icon-bar a {
+    text-align: center;
+    padding: 10pt;
+    padding-top: 5pt;
+    padding-bottom: 0pt;
+    transition: all 0.3s ease;
+    color: white;
+    background-color: #868686;
+    font-size: 25px;
+    border-radius: 2pt;
+  }
+
+  .icon-bar a:hover {
+    background-color: #f5ba09;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+    padding-left: 50pt;
+    padding-right: 50pt;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+  .instagram {
+    background: #f379d4;
+    color: white;
+  }
+
+  .fa-trophy {
+    font-size:24px;
+    color: #ffbf00;
+    text-shadow: 1px 1px #000000;
+  }
+  
+  .fa-cogs {
+    font-size:24px;
+    color: #ffbf00;
+    text-shadow: 1px 1px #000000;
+  }
+
+  .card {
+    background-color: #c3c3c3;
+    margin-top: 20pt;
+    display: flex;  
+    flex-wrap: wrap;
+    min-width: 18rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%238c8c8d' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  }
+
+  .card:hover{
+    box-shadow: 0px 0px 20px #ffbf00;
+    transform: scale(1.01);
+    background-color: #fbda77;
+    transition-duration: 200ms;
+  }
+  .more_card {
+    background-color: #c3c3c3;
+    margin-top: 20pt;
+    border-bottom: 8px solid #f5ba09;
+    min-height: 300pt;
+    display: flex;  
+    flex-wrap: wrap;
+    min-width: 18rem;
+  }
+
+  .more_card:hover{
+    box-shadow: 0px 0px 20px #ffbf00;
+    background-color: #fbda77;
+    transform: scale(1.01);
+    transition-duration: 200ms;
+  }
+
+  /* Style the header */
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+  .footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top-left-radius: 5pt;
+    border-top-right-radius: 5pt;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    text-align: center;
+  }
+
+  .cd-section {
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .cd-section--bg-fixed {
+    min-height: 50vh;
+    background-attachment: fixed;
+  }
+  
+  .gallery_item {
+    border-radius: 5pt;
+    box-shadow: 0px 0px 10px #0c0c0c;
+    margin: 10px;
+    max-height: 300pt;
+    max-width: 600px;
+  }
+
+  .carousel-item {
+    border-radius: 5pt;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  th {
+    color: #f5ba09;
+    font-size: large;
+  }
+
+  table {
+    box-shadow: 0px 0px 20px #ffbf00;
+    overflow-x:auto;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container{
+    flex-wrap: wrap;
+  }
+
+  p{
+    color: white; 
+    line-height: 25pt; 
+    font-size: x-large;
+  }
+
+  img {
+    border-radius: 5pt;
+  }
+
+  ol{
+    color: white; 
+    line-height: 25pt; 
+    font-size: x-large;
+  }
+
+  ul{
+    color: white; 
+    line-height: 25pt; 
+    font-size: x-large;
+  }
+
+  iframe {
+    border-radius: 5pt;
+  }
+
+  .card-text {
+    color:black; 
+    line-height:normal; 
+    font-size: large;
+  }
+  
